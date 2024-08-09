@@ -8,6 +8,7 @@ namespace Biblioteca.Entites.DTO
     {
         public int Codigo { get; set; }
 
+        /*
         [StringLength(100, MinimumLength = 2)]
         [Required(ErrorMessage = "El nombre del empleado es requerido")]
         [Display(Name = "Nombre de Empleado")]
@@ -23,10 +24,6 @@ namespace Biblioteca.Entites.DTO
         [DataType(DataType.Date)]
         public DateTime FechaCont { get; set; }
 
-        [Required]
-        [Range(0.01, double.MaxValue, ErrorMessage = "El salario debe ser mayor que cero.")]
-        public decimal Salario { get; set; }
-
         [Display(Name = "Descripción de Empleado")]
         public string? Descripcion { get; set; }
 
@@ -34,5 +31,12 @@ namespace Biblioteca.Entites.DTO
         [Required]
         [ForeignKey("Departamento")]
         public int? DepartamentoId { get; set; }
+        */
+
+        [Required]
+        [Range(0.01, double.MaxValue, ErrorMessage = "El salario debe ser mayor que cero.")]
+        public decimal Salario { get; set; }
+
+        
     }
 }
