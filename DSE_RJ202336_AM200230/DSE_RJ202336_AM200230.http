@@ -1,0 +1,6 @@
+@DSE_RJ202336_AM200230_HostAddress = http://localhost:5235
+
+GET {{DSE_RJ202336_AM200230_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
